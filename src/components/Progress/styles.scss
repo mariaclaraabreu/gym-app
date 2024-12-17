@@ -1,0 +1,14 @@
+.ant-progress {
+    &.ant-progress-circle .ant-progress-text {
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+        stroke: var(--primary-color-3);
+    }
+
+    &.ant-progress-status-success .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+        stroke: var(--green-1);
+    }
+}

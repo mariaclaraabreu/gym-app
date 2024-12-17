@@ -1,5 +1,38 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/Nexa-ExtraLight.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url('./fonts/Nexa-Heavy.ttf') format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nexa', sans-serif !important;
 }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Nexa', sans-serif !important;
+}
+
+:root {
+    --primary-color-1: #211522;
+    --primary-color-2: #613659;
+    --primary-color-3: #C197D2;
+    --primary-color-4: #D3B1C2;
+
+
+    --dark-gray-1:  #3d3d3d;
+    --dark-gray-2: #666666;
+    --dark-gray-3:  #898989;
+    --dark-gray-4: #e0e0e0;
+    --dark-gray-5: #F5F5F5;
+
+    --green-1: #7cca83;
+    --green-2: #C2FFC7;
+    --green-3: #d6fdd9;
+  }
