@@ -1,0 +1,12 @@
+.ga-carousel-item {
+    outline: none;
+    
+    img {
+        margin: 0;
+        height: 400px;
+        min-width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+

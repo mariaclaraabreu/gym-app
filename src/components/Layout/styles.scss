@@ -1,0 +1,24 @@
+.ga-layout {
+
+    .ant-layout-header {
+        background-color: var(--primary-color-3);
+        color: white;
+    }
+
+    .ga-page-content {
+        padding-top: 30px;
+        text-align: center;
+        background-color: white;
+        padding: 30px 50px;
+    }
+
+    footer {
+        font-style: italic;
+        text-align: center;
+        background-color: var(--dark-gray-4);
+        position : absolute;
+        bottom : 0;
+        height : 40px;
+        width: 100%;
+        padding-bottom: 30px;
+    }}

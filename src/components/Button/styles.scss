@@ -1,0 +1,27 @@
+.ant-btn {
+    font-weight: bold;
+    border: 0;
+
+    &.light {
+        background-color: white;
+    }
+
+    &.primary {
+        background-color: var(--primary-color-3);
+        color: white;
+
+        :hover {
+            border-color: red;
+        }
+    }
+
+    &.secondary {
+        background-color: var(--primary-color-4);
+    }
+
+    &.ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover {
+        background-color: var(--primary-color-4);
+        border-color: white;
+        color: white;
+    }
+}

@@ -1,0 +1,55 @@
+.ant-table-wrapper {
+
+    .ant-table-thead>tr>th {
+        background-color: var(--primary-color-3);
+        color: white;
+        text-align: center;
+    }
+
+    tr {
+
+        td:nth-child(3),
+        :nth-child(4) {
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    .ant-checkbox-wrapper {
+        padding-left: 10px;
+
+        .ant-checkbox .ant-checkbox-inner {
+            height: 20px;
+            width: 20px;
+            border-radius: 6px;
+            transition: all 0.9s;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: var(--primary-color-3);
+            border-color: var(--primary-color-3);
+        }
+
+        ::after {
+            width: 10px;
+        }
+
+        &:not(.ant-checkbox-wrapper-disabled):hover {
+            .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+                background-color: var(--primary-color-4);
+            }
+
+            .ant-checkbox-inner {
+                border-color: var(--primary-color-3);
+            }
+        }
+
+        .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+            background-color: var(--primary-color-3);
+        }
+    }
+
+    .ant-table-tbody .ant-table-row.ant-table-row-selected>.ant-table-cell-row-hover {
+        background-color: var(--green-3);
+    }
+}
