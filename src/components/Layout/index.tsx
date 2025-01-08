@@ -2,9 +2,10 @@ import { Layout as LayoutAntd } from 'antd';
 
 import Carousel from 'components/Carousel';
 
-const { Header, Footer, Content } = LayoutAntd;
+const { Header, Content } = LayoutAntd;
 
 import './styles.scss';
+import Menu from 'components/Menu';
 
 type LayoutParams = {
     displayCarousel?: boolean,
@@ -26,7 +27,7 @@ const Layout = ({
             <Content className='ga-page-content'>
                 {children}
             </Content>
-            <Footer>Developed by MC Softwares</Footer>
+            <Menu />
         </LayoutAntd>
     );
 };

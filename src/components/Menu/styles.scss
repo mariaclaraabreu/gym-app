@@ -1,0 +1,10 @@
+.ga-menu {
+    background-color: var(--primary-color-3);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+}
