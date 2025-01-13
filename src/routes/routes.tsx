@@ -1,12 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 
-import Home from '../pages/Home';
+import Layout from 'components/Layout';
+
 import { routerType } from '../types/router.types';
 
 const routes: routerType[] = [
     {
         path: '',
-        element: <Home />,
+        element: <Layout />,
         title: 'home',
     },
 ];

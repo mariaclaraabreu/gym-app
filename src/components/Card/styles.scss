@@ -1,0 +1,16 @@
+.ga-card {
+    border: 2px solid var(--primary-color-3);
+
+    .ant-card-head {
+        .ant-card-head-title {
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .ant-card-body {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}

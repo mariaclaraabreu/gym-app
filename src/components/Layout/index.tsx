@@ -5,17 +5,23 @@ import Carousel from 'components/Carousel';
 const { Header, Content } = LayoutAntd;
 
 import './styles.scss';
+
+import { useContext } from 'react';
+
 import Menu from 'components/Menu';
+import { GlobalContext } from 'contexts/GlobalContext';
+import { Pages } from 'pages';
 
 type LayoutParams = {
     displayCarousel?: boolean,
-    children: React.ReactNode
+    children?: React.ReactNode
 }
 
 const Layout = ({
     displayCarousel = true,
-    children,
 }: LayoutParams) => {
+    const { currentSelectedPageContent } = useContext(GlobalContext);
+
     return (
         <LayoutAntd className='ga-layout'>
             <Header>
@@ -25,7 +31,7 @@ const Layout = ({
                 {displayCarousel && <Carousel />}
             </section>
             <Content className='ga-page-content'>
-                {children}
+                {Pages[currentSelectedPageContent]}
             </Content>
             <Menu />
         </LayoutAntd>
