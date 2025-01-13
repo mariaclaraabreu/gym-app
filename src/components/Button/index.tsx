@@ -7,6 +7,7 @@ import './styles.scss';
 type ButtonParams = {
     children?: string;
     icon?: React.ReactNode,
+    isFocused?: boolean,
     typeButton?: 'primary' | 'secondary' | 'light',
 } & ButtonProps;
 
@@ -15,9 +16,14 @@ const Button = ({
     icon,
     typeButton = 'primary',
     shape = 'default',
+    isFocused = false,
+    className,
+    ...otherProps
 }: ButtonParams) => {
     const classes = classNames(
+        className,
         typeButton,
+        isFocused ? 'focused' : '',
     );
 
     return (
@@ -25,6 +31,7 @@ const Button = ({
             className={classes}
             icon={icon}
             shape={shape}
+            {...otherProps}
         >
             {children}
         </ButtonAntd>

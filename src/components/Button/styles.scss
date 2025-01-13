@@ -9,9 +9,17 @@
     &.primary {
         background-color: var(--primary-color-3);
         color: white;
+    }
 
-        :hover {
-            border-color: red;
+    &.focused {
+        background-color: white;
+        border: 2px solid var(--primary-color-3);
+        color: var(--primary-color-3);
+
+        &.ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover {
+            background-color: white;
+            border-color: var(--primary-color-3);
+            color: var(--primary-color-3);
         }
     }
 

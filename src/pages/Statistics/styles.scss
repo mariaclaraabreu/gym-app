@@ -1,0 +1,10 @@
+.ga-statistics-page {
+    .ga-tab-button {
+        height: 40px;
+        border-radius: 0 !important;
+
+        &.focused {
+            transition: 1s;
+        }
+    }
+}
