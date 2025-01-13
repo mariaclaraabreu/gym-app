@@ -63,3 +63,7 @@ React, Typescript + Vite
 ## How to run
 1. `npm install`
 2. `npm run dev`
+
+## Preview
+https://github.com/user-attachments/assets/9eb00746-a67e-417c-a01a-bbd1d8dffc6c
+
